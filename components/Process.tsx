@@ -7,61 +7,53 @@ import { div } from "three/examples/jsm/nodes/Nodes";
 const Process = () => {
   return (
     <section className="w-full py-20" id="achievements">
-    <h1 className="heading">
-      My <span className="text-purple">Achievements</span>
-    </h1>
-    {/* remove bg-white dark:bg-black */}
-    <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-      {/* add des prop */}
-      <Card
-        title="Problem Solving"
-        icon={<AceternityIcon order="Woooosh✨" />}
-        des="I have solved over 900 questions on leetcode and over 2000 DSA questions overall, which shows my problem solving capabilities."
-      >
-        <CanvasRevealEffect
-          animationSpeed={3}
-
-          containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-          colors={[
-
-            [255, 166, 158],
-            [221, 255, 247],
-          ]}
-          dotSize={2}
-        />
-    
-      </Card>
-      <Card
-        title="Contributions to Open-Source"
-        icon={<AceternityIcon order="Woooosh✨" />}
-        des="I have contributed to open-source community which shows that I believe in harnessing the power of open-source technologies."
-      >
-        <CanvasRevealEffect
-          animationSpeed={3}
-
-          containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-          colors={[
-
-            [255, 166, 158],
-            [221, 255, 247],
-          ]}
-          dotSize={2}
-        />
-    
-      </Card>
-      <Card
-        title="Articles"
-        icon={<AceternityIcon order="Woooosh✨" />}
-        des="I&apos;ve authored articles on various exciting topics. My goal? To empower fellow developers by demystifying complex concepts, offering practical tips, and fostering a vibrant tech community."
-      >
-        <CanvasRevealEffect
-          animationSpeed={3}
-          containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-          colors={[[125, 211, 252]]}
-        />
-      </Card>
-    </div>
-  </section>
+      <h1 className="heading">
+        My <span className="text-purple">Achievements</span>
+      </h1>
+      <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
+        <Card
+          title="Problem Solving"
+          icon={<AceternityIcon order="Woooosh✨" />}
+          des="I have solved over 900 questions on leetcode and over 2000 DSA questions overall, which shows my problem solving capabilities."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+            colors={[
+              [255, 166, 158],
+              [221, 255, 247],
+            ]}
+            dotSize={2}
+          />
+        </Card>
+        <Card
+          title="Contributions to Open-Source"
+          icon={<AceternityIcon order="Woooosh✨" />}
+          des="I have contributed to open-source community which shows that I believe in harnessing the power of open-source technologies."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
+            colors={[
+              [255, 166, 158],
+              [221, 255, 247],
+            ]}
+            dotSize={2}
+          />
+        </Card>
+        <Card
+          title="Articles"
+          icon={<AceternityIcon order="Woooosh✨" />}
+          des="I've authored articles on various exciting topics. My goal? To empower fellow developers by demystifying complex concepts, offering practical tips, and fostering a vibrant tech community."
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+      </div>
+    </section>
   );
 };
 
