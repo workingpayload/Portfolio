@@ -21,11 +21,11 @@ const Footer = () => {
           next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me and let's build something together.
+          Reach out to me and let&apos;s build something together.
         </p>
         <a href="mailto:rs91963@gmail.com">
           <MagicButtton
-            title="Let's get in touch"
+            title="Let&apos;s get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />
